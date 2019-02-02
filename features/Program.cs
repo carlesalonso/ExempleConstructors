@@ -16,9 +16,9 @@ namespace features
 
     /* La classe OldPoint és equivalent a la classe Point
      * utilitzant els constructors de blocs i els atributs privats
-     */
 
-    class OldPoint
+
+    class Point
 
     {
 
@@ -60,7 +60,7 @@ namespace features
         }
     }
 
-
+    */
 
     class Pixel : Point
 
@@ -83,13 +83,10 @@ namespace features
         static void Main(string[] args)
         {
             var point = new Point(12, 10);
-            var point2 = new OldPoint(12, 10);
             var origin = new Point();
             var pixel = new Pixel(100, 200, 128);
 
             Console.WriteLine(Display(point));
-            Console.WriteLine(Display(point2));
-
             Console.WriteLine(Display(origin));
             Console.WriteLine(Display(pixel));
 
